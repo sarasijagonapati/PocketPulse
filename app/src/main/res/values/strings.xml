@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Spendly</string>
+    <string name="accessibility_description">PocketPulse Smart Tracker Service</string>
+</resources>
