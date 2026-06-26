@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="?attr/colorSurface" android:padding="24dp">
+        <!--  Handle bar — matches your existing bottom sheet style  -->
+        <View android:layout_width="40dp" android:layout_height="4dp" android:background="?attr/colorOutlineVariant" android:layout_gravity="center_horizontal" android:layout_marginBottom="16dp"/>
+        <!--  Title  -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Edit Category" android:textAppearance="@style/TextAppearance.Material3.TitleLarge" android:textStyle="bold"/>
+        <!--  Shows current category  -->
+        <TextView android:id="@+id/tvCurrentCategory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="16dp" android:textAppearance="@style/TextAppearance.Material3.BodySmall" android:textColor="?attr/colorOnSurfaceVariant"/>
+        <!--  Category chips — same style as your existing bottom_sheet_categorizer  -->
+        <com.google.android.material.chip.ChipGroup android:id="@+id/chipGroupCategories" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" app:singleSelection="true">
+            <com.google.android.material.chip.Chip android:id="@+id/chipFood" style="@style/Widget.Material3.Chip.Suggestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Food"/>
+            <com.google.android.material.chip.Chip android:id="@+id/chipShopping" style="@style/Widget.Material3.Chip.Suggestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shopping"/>
+            <com.google.android.material.chip.Chip android:id="@+id/chipTravel" style="@style/Widget.Material3.Chip.Suggestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Travel"/>
+            <com.google.android.material.chip.Chip android:id="@+id/chipEducation" style="@style/Widget.Material3.Chip.Suggestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Education"/>
+            <com.google.android.material.chip.Chip android:id="@+id/chipBills" style="@style/Widget.Material3.Chip.Suggestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bills"/>
+            <com.google.android.material.chip.Chip android:id="@+id/chipEntertainment" style="@style/Widget.Material3.Chip.Suggestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Entertainment"/>
+            <com.google.android.material.chip.Chip android:id="@+id/chipOther" style="@style/Widget.Material3.Chip.Suggestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Other"/>
+        </com.google.android.material.chip.ChipGroup>
+        <!--  Save button — plain Material3 Button, same as your "Log to Ledger" button  -->
+        <Button android:id="@+id/btnSaveCategory" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Save Category"/>
+    </LinearLayout>
+
